@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="Windows-1252" standalone="no"?>
+<report>
+  <stats>
+    <packages value="4"/>
+    <classes value="4"/>
+    <methods value="20"/>
+    <srcfiles value="4"/>
+    <srclines value="122"/>
+    <totallines value="122"/>
+    <coveredlines value="104"/>
+    <coveredpercent value="85"/>
+  </stats>
+  <data>
+    <all name="all classes">
+      <coverage type="class, %" value="100%   (4/4)"/>
+      <coverage type="method, %" value="85%   (17/20)"/>
+      <coverage type="block, %" value="85%   (104/122)"/>
+      <coverage type="line, %" value="85%   (104/122)"/>
+      <package name="ufTarefa2">
+        <coverage type="class, %" value="100%   (1/1)"/>
+        <coverage type="method, %" value="100%   (2/2)"/>
+        <coverage type="block, %" value="70%   (14/20)"/>
+        <coverage type="line, %" value="70%   (14/20)"/>
+        <srcfile name="ufTarefa2.pas">
+          <coverage type="class, %" value="100%   (1/1)"/>
+          <coverage type="method, %" value="100%   (2/2)"/>
+          <coverage type="block, %" value="70%   (14/20)"/>
+          <coverage type="line, %" value="70%   (14/20)"/>
+          <class name="TfTarefa2">
+            <coverage type="class, %" value="100%   (1/1)"/>
+            <coverage type="method, %" value="100%   (2/2)"/>
+            <coverage type="block, %" value="70%   (14/20)"/>
+            <coverage type="line, %" value="70%   (14/20)"/>
+            <method name="FormClose">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="57%   (8/14)"/>
+              <coverage type="line, %" value="57%   (8/14)"/>
+            </method>
+            <method name="btnExecutarClick">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (6/6)"/>
+              <coverage type="line, %" value="100%   (6/6)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+      <package name="ufTarefa1">
+        <coverage type="class, %" value="100%   (1/1)"/>
+        <coverage type="method, %" value="100%   (3/3)"/>
+        <coverage type="block, %" value="100%   (17/17)"/>
+        <coverage type="line, %" value="100%   (17/17)"/>
+        <srcfile name="ufTarefa1.pas">
+          <coverage type="class, %" value="100%   (1/1)"/>
+          <coverage type="method, %" value="100%   (3/3)"/>
+          <coverage type="block, %" value="100%   (17/17)"/>
+          <coverage type="line, %" value="100%   (17/17)"/>
+          <class name="TfTarefa1">
+            <coverage type="class, %" value="100%   (1/1)"/>
+            <coverage type="method, %" value="100%   (3/3)"/>
+            <coverage type="block, %" value="100%   (17/17)"/>
+            <coverage type="line, %" value="100%   (17/17)"/>
+            <method name="FormShow">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (3/3)"/>
+              <coverage type="line, %" value="100%   (3/3)"/>
+            </method>
+            <method name="FormClose">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (4/4)"/>
+              <coverage type="line, %" value="100%   (4/4)"/>
+            </method>
+            <method name="btGerarSQLClick">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (10/10)"/>
+              <coverage type="line, %" value="100%   (10/10)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+      <package name="uspQuery">
+        <coverage type="class, %" value="100%   (1/1)"/>
+        <coverage type="method, %" value="73%   (8/11)"/>
+        <coverage type="block, %" value="82%   (56/68)"/>
+        <coverage type="line, %" value="82%   (56/68)"/>
+        <srcfile name="uspQuery.pas">
+          <coverage type="class, %" value="100%   (1/1)"/>
+          <coverage type="method, %" value="73%   (8/11)"/>
+          <coverage type="block, %" value="82%   (56/68)"/>
+          <coverage type="line, %" value="82%   (56/68)"/>
+          <class name="TspQuery">
+            <coverage type="class, %" value="100%   (1/1)"/>
+            <coverage type="method, %" value="73%   (8/11)"/>
+            <coverage type="block, %" value="82%   (56/68)"/>
+            <coverage type="line, %" value="82%   (56/68)"/>
+            <method name="ListaParaString">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="91%   (21/23)"/>
+              <coverage type="line, %" value="91%   (21/23)"/>
+            </method>
+            <method name="GetSpColunas">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (3/3)"/>
+              <coverage type="line, %" value="100%   (3/3)"/>
+            </method>
+            <method name="Create">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (6/6)"/>
+              <coverage type="line, %" value="100%   (6/6)"/>
+            </method>
+            <method name="GetSpCondicoes">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (3/3)"/>
+              <coverage type="line, %" value="100%   (3/3)"/>
+            </method>
+            <method name="GeraSQL">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (9/9)"/>
+              <coverage type="line, %" value="100%   (9/9)"/>
+            </method>
+            <method name="GetSpTabelas">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (3/3)"/>
+              <coverage type="line, %" value="100%   (3/3)"/>
+            </method>
+            <method name="SetSPColunas">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="SetSPCondicoes">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+            <method name="VerificarTabela">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="83%   (5/6)"/>
+              <coverage type="line, %" value="83%   (5/6)"/>
+            </method>
+            <method name="Destroy">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (6/6)"/>
+              <coverage type="line, %" value="100%   (6/6)"/>
+            </method>
+            <method name="SetSPTabelas">
+              <coverage type="method, %" value="0%   (0/1)"/>
+              <coverage type="block, %" value="0%   (0/3)"/>
+              <coverage type="line, %" value="0%   (0/3)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+      <package name="ufTarefa3">
+        <coverage type="class, %" value="100%   (1/1)"/>
+        <coverage type="method, %" value="100%   (4/4)"/>
+        <coverage type="block, %" value="100%   (17/17)"/>
+        <coverage type="line, %" value="100%   (17/17)"/>
+        <srcfile name="ufTarefa3.pas">
+          <coverage type="class, %" value="100%   (1/1)"/>
+          <coverage type="method, %" value="100%   (4/4)"/>
+          <coverage type="block, %" value="100%   (17/17)"/>
+          <coverage type="line, %" value="100%   (17/17)"/>
+          <class name="TfTarefa3">
+            <coverage type="class, %" value="100%   (1/1)"/>
+            <coverage type="method, %" value="100%   (4/4)"/>
+            <coverage type="block, %" value="100%   (17/17)"/>
+            <coverage type="line, %" value="100%   (17/17)"/>
+            <method name="btnTotalClick">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (3/3)"/>
+              <coverage type="line, %" value="100%   (3/3)"/>
+            </method>
+            <method name="btnDivisoesClick">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (3/3)"/>
+              <coverage type="line, %" value="100%   (3/3)"/>
+            </method>
+            <method name="FormClose">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (5/5)"/>
+              <coverage type="line, %" value="100%   (5/5)"/>
+            </method>
+            <method name="FormCreate">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (6/6)"/>
+              <coverage type="line, %" value="100%   (6/6)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+    </all>
+  </data>
+</report>

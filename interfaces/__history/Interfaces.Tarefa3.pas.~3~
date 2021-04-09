@@ -1,0 +1,20 @@
+unit Interfaces.Tarefa3;
+
+interface
+
+uses Data.DB;
+
+type
+  iTarefa3 = interface
+    ['{8757D613-AA8B-45BC-B122-5F6744A42ABD}']
+    function GetDataSource: TDataSource;
+
+    function RetornaTotal: Double;
+    function RetornaDivisao: Double;
+
+    property DataSource: TDataSource read GetDataSource;
+  end;
+
+implementation
+
+end.

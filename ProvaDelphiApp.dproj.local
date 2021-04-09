@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/04/07 22:24:04.000.806,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa1.dfm=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa1.dfm</Transaction>
+    <Transaction>2021/04/07 22:24:04.000.806,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa1.pas=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa1.pas</Transaction>
+    <Transaction>2021/04/07 22:27:28.000.942,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa2.pas=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa2.pas</Transaction>
+    <Transaction>2021/04/07 22:27:28.000.942,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa2.dfm=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa2.dfm</Transaction>
+    <Transaction>2021/04/07 22:51:13.000.209,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa3.pas=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa3.pas</Transaction>
+    <Transaction>2021/04/07 22:51:13.000.209,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa3.dfm=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa3.dfm</Transaction>
+    <Transaction>2021/04/07 23:40:57.000.186,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa1.pas=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa1.pas</Transaction>
+    <Transaction>2021/04/07 23:40:57.000.186,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa1.dfm=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa1.dfm</Transaction>
+    <Transaction>2021/04/07 23:42:40.000.940,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa2.dfm=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa2.dfm</Transaction>
+    <Transaction>2021/04/07 23:42:40.000.940,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa2.pas=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa2.pas</Transaction>
+    <Transaction>2021/04/07 23:44:01.000.407,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa3.pas=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa3.pas</Transaction>
+    <Transaction>2021/04/07 23:44:01.000.407,D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufTarefa3.dfm=D:\SoftPlan\Delphi\TesteSoftPlayer\view\ufrmTarefa3.dfm</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="controller"/>
+    <File Path="controller\Controller.Tarefa3.pas"/>
+    <File Path="controller\Controller.Threads.pas"/>
+    <File Path="interfaces"/>
+    <File Path="interfaces\Interfaces.Tarefa3.pas"/>
+    <File Path="view"/>
+    <File Path="view\ufTarefa1.pas"/>
+    <File Path="view\ufTarefa1.dfm"/>
+    <File Path="view\ufTarefa2.pas"/>
+    <File Path="view\ufTarefa2.dfm"/>
+    <File Path="view\ufTarefa3.pas"/>
+    <File Path="view\ufTarefa3.dfm"/>
+    <File Path="view\View.Principal.pas"/>
+    <File Path="view\View.Principal.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

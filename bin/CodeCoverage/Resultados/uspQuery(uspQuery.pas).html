@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Delphi CodeCoverage Coverage Report</title>
+<style type="text/css">
+table {border-spacing:0; border-collapse:collapse;}
+table, td, th {border: 1px solid black;}
+td, th {background: white; margin: 0; padding: 2px 0.5em 2px 0.5em}
+td {border-width: 0 1px 0 0;}
+th {border-width: 1px 1px 1px 0;}
+p, h1, h2, h3, th {font-family: verdana,arial,sans-serif; font-size: 10pt;}
+td {font-family: courier,monospace; font-size: 10pt;}
+th {background: #CCCCCC;}
+table.o tr td:nth-child(1) {font-weight: bold;}
+table.o tr td:nth-child(2) {text-align: right;}
+table.o tr td {border-width: 1px;}
+table.s {width: 100%;}
+table.s tr td {padding: 0 0.25em 0 0.25em;}
+table.s tr td:first-child {text-align: right; font-weight: bold;}
+table.s tr.notcovered td {background: #DDDDFF;}
+table.s tr.nocodegen td {background: #FFFFEE;}
+table.s tr.covered td {background: #CCFFCC;}
+table.s tr.covered td:first-child {color: green;}
+table.s {border-width: 1px 0 1px 1px;}
+table.sum tr td {border-width: 1px;}
+table.sum tr th {text-align:right;}
+table.sum tr th:first-child {text-align:center;}
+table.sum tr td {text-align:right;}
+table.sum tr td:first-child {text-align:left;}
+</style>
+</head>
+<body>
+<p>Coverage report for <strong>uspQuery (D:\SoftPlan\Delphi\TesteSoftPlayer\controller\uspQuery.pas)</strong>.</p>
+<p> Generated at 09/04/2021 12:58:32 by <a href="https://sourceforge.net/projects/delphicodecoverage/" title="Code Coverage for Delphi 5+">DelphiCodeCoverage</a> - an open source tool for Delphi Code Coverage.</p>
+<p> Statistics for D:\SoftPlan\Delphi\TesteSoftPlayer\controller\uspQuery.pas </p>
+<table  class="o"><tr><td>Number of lines covered</td><td>56</td></tr><tr><td>Number of lines with code gen</td><td>68</td></tr><tr><td>Line coverage</td><td>82%</td></tr></table>
+<br /><br />
+<table  class="s">
+<tr class="nocodegen"><td>1</td><td><pre style="display:inline;">unit uspQuery;</pre></td></tr>
+<tr class="nocodegen"><td>2</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>3</td><td><pre style="display:inline;">interface</pre></td></tr>
+<tr class="nocodegen"><td>4</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>5</td><td><pre style="display:inline;">uses Interfaces.SPQuery, Classes, System.SysUtils, StrUtils,</pre></td></tr>
+<tr class="nocodegen"><td>6</td><td><pre style="display:inline;">  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,</pre></td></tr>
+<tr class="nocodegen"><td>7</td><td><pre style="display:inline;">  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async,</pre></td></tr>
+<tr class="nocodegen"><td>8</td><td><pre style="display:inline;">  FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.Phys;</pre></td></tr>
+<tr class="nocodegen"><td>9</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>10</td><td><pre style="display:inline;">type</pre></td></tr>
+<tr class="nocodegen"><td>11</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>12</td><td><pre style="display:inline;">  TspQuery = class(TFDQuery, iSPQuery)</pre></td></tr>
+<tr class="nocodegen"><td>13</td><td><pre style="display:inline;">  private</pre></td></tr>
+<tr class="nocodegen"><td>14</td><td><pre style="display:inline;">    { private declarations }</pre></td></tr>
+<tr class="nocodegen"><td>15</td><td><pre style="display:inline;">    FspCondicoes: TStringList;</pre></td></tr>
+<tr class="nocodegen"><td>16</td><td><pre style="display:inline;">    FspColunas:   TStringList;</pre></td></tr>
+<tr class="nocodegen"><td>17</td><td><pre style="display:inline;">    FspTabelas:   TStringList;</pre></td></tr>
+<tr class="nocodegen"><td>18</td><td><pre style="display:inline;">  protected</pre></td></tr>
+<tr class="nocodegen"><td>19</td><td><pre style="display:inline;">    { protected declarations }</pre></td></tr>
+<tr class="nocodegen"><td>20</td><td><pre style="display:inline;">    {$REGION 'Metodos get_set'}</pre></td></tr>
+<tr class="nocodegen"><td>21</td><td><pre style="display:inline;">      function GetSpCondicoes: TStringList;</pre></td></tr>
+<tr class="nocodegen"><td>22</td><td><pre style="display:inline;">      procedure SetSPCondicoes(aValue: TStringList);</pre></td></tr>
+<tr class="nocodegen"><td>23</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>24</td><td><pre style="display:inline;">      function GetSpColunas: TStringList;</pre></td></tr>
+<tr class="nocodegen"><td>25</td><td><pre style="display:inline;">      procedure SetSPColunas(aValue: TStringList);</pre></td></tr>
+<tr class="nocodegen"><td>26</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>27</td><td><pre style="display:inline;">      function GetSpTabelas: TStringList;</pre></td></tr>
+<tr class="nocodegen"><td>28</td><td><pre style="display:inline;">      procedure SetSPTabelas(aValue: TStringList);</pre></td></tr>
+<tr class="nocodegen"><td>29</td><td><pre style="display:inline;">    {$ENDREGION}</pre></td></tr>
+<tr class="nocodegen"><td>30</td><td><pre style="display:inline;">  public</pre></td></tr>
+<tr class="nocodegen"><td>31</td><td><pre style="display:inline;">    { public declarations }</pre></td></tr>
+<tr class="nocodegen"><td>32</td><td><pre style="display:inline;">    constructor Create(AOwner: TComponent); override;</pre></td></tr>
+<tr class="nocodegen"><td>33</td><td><pre style="display:inline;">    destructor Destroy; override;</pre></td></tr>
+<tr class="nocodegen"><td>34</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>35</td><td><pre style="display:inline;">    ///  &lt;summary&gt;Validação da tabela, com restrição de uma única tabela&lt;/summary&gt;</pre></td></tr>
+<tr class="nocodegen"><td>36</td><td><pre style="display:inline;">    ///  &lt;date&gt;08/04/2021&lt;/date&gt;</pre></td></tr>
+<tr class="nocodegen"><td>37</td><td><pre style="display:inline;">    ///  &lt;author&gt;Huander Leao&lt;/author&gt;</pre></td></tr>
+<tr class="nocodegen"><td>38</td><td><pre style="display:inline;">    procedure VerificarTabela;</pre></td></tr>
+<tr class="nocodegen"><td>39</td><td><pre style="display:inline;">    ///  &lt;summary&gt;Percorre a StringList e retorna uma string para formar a condição da SQL&lt;/summary&gt;</pre></td></tr>
+<tr class="nocodegen"><td>40</td><td><pre style="display:inline;">    ///  &lt;return&gt;String montada do recurso&lt;/return&gt;</pre></td></tr>
+<tr class="nocodegen"><td>41</td><td><pre style="display:inline;">    ///  &lt;param name=&quot;aStringList&quot;&gt;Lista para ser percorrida&lt;/param&gt;</pre></td></tr>
+<tr class="nocodegen"><td>42</td><td><pre style="display:inline;">    ///  &lt;param name=&quot;aTipoList&quot;&gt;Identificador de separador de condições&lt;/param&gt;</pre></td></tr>
+<tr class="nocodegen"><td>43</td><td><pre style="display:inline;">    ///  &lt;date&gt;08/04/2021&lt;/date&gt;</pre></td></tr>
+<tr class="nocodegen"><td>44</td><td><pre style="display:inline;">    ///  &lt;author&gt;Huander Leao&lt;/author&gt;</pre></td></tr>
+<tr class="nocodegen"><td>45</td><td><pre style="display:inline;">    function ListaParaString(aStringList: TStringList; aTipoLista: TTipoLista): String;</pre></td></tr>
+<tr class="nocodegen"><td>46</td><td><pre style="display:inline;">    ///  &lt;summary&gt;Forma a SQL de acordo com a tabela, colunas e condicoes&lt;/summary&gt;</pre></td></tr>
+<tr class="nocodegen"><td>47</td><td><pre style="display:inline;">    ///  &lt;return&gt;Será retornada a consulta&lt;/return&gt;</pre></td></tr>
+<tr class="nocodegen"><td>48</td><td><pre style="display:inline;">    ///  &lt;date&gt;08/04/2021&lt;/date&gt;</pre></td></tr>
+<tr class="nocodegen"><td>49</td><td><pre style="display:inline;">    ///  &lt;author&gt;Huander Leao&lt;/author&gt;</pre></td></tr>
+<tr class="nocodegen"><td>50</td><td><pre style="display:inline;">    function GeraSQL: String;</pre></td></tr>
+<tr class="nocodegen"><td>51</td><td><pre style="display:inline;">  published</pre></td></tr>
+<tr class="nocodegen"><td>52</td><td><pre style="display:inline;">    { published declarations }</pre></td></tr>
+<tr class="nocodegen"><td>53</td><td><pre style="display:inline;">    property spCondicoes: TStringList read GetSpCondicoes write SetSpCondicoes;</pre></td></tr>
+<tr class="nocodegen"><td>54</td><td><pre style="display:inline;">    property spColunas:   TStringList read GetSpColunas   write SetSpColunas;</pre></td></tr>
+<tr class="nocodegen"><td>55</td><td><pre style="display:inline;">    property spTabelas:   TStringList read GetSpTabelas   write SetSpTabelas;</pre></td></tr>
+<tr class="nocodegen"><td>56</td><td><pre style="display:inline;">  end;</pre></td></tr>
+<tr class="nocodegen"><td>57</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>58</td><td><pre style="display:inline;">implementation</pre></td></tr>
+<tr class="nocodegen"><td>59</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>60</td><td><pre style="display:inline;">{ TspQuery }</pre></td></tr>
+<tr class="nocodegen"><td>61</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>62</td><td><pre style="display:inline;">constructor TspQuery.Create(AOwner: TComponent);</pre></td></tr>
+<tr class="covered"><td>63</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="covered"><td>64</td><td><pre style="display:inline;">  inherited Create(AOwner);</pre></td></tr>
+<tr class="covered"><td>65</td><td><pre style="display:inline;">  FspCondicoes := TStringList.Create;</pre></td></tr>
+<tr class="covered"><td>66</td><td><pre style="display:inline;">  FspColunas   := TStringList.Create;</pre></td></tr>
+<tr class="covered"><td>67</td><td><pre style="display:inline;">  FspTabelas   := TStringList.Create;</pre></td></tr>
+<tr class="covered"><td>68</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>69</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>70</td><td><pre style="display:inline;">destructor TspQuery.Destroy;</pre></td></tr>
+<tr class="covered"><td>71</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="covered"><td>72</td><td><pre style="display:inline;">  FspCondicoes.Free;</pre></td></tr>
+<tr class="covered"><td>73</td><td><pre style="display:inline;">  FspColunas.Free;</pre></td></tr>
+<tr class="covered"><td>74</td><td><pre style="display:inline;">  FspTabelas.Free;</pre></td></tr>
+<tr class="covered"><td>75</td><td><pre style="display:inline;">  inherited Destroy;</pre></td></tr>
+<tr class="covered"><td>76</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>77</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>78</td><td><pre style="display:inline;">procedure TspQuery.VerificarTabela;</pre></td></tr>
+<tr class="covered"><td>79</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="covered"><td>80</td><td><pre style="display:inline;">  if FspTabelas.Count = 0 then</pre></td></tr>
+<tr class="notcovered"><td>81</td><td><pre style="display:inline;">    raise Exception.Create('Falta informar a tabela' + #13 + 'ATENÇÃO!')</pre></td></tr>
+<tr class="covered"><td>82</td><td><pre style="display:inline;">  else if FspTabelas.Count &gt; 1 then</pre></td></tr>
+<tr class="covered"><td>83</td><td><pre style="display:inline;">    raise Exception.Create('Informe somente uma tabela' + #13 +</pre></td></tr>
+<tr class="nocodegen"><td>84</td><td><pre style="display:inline;">                           'ATENÇÃO!');</pre></td></tr>
+<tr class="covered"><td>85</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>86</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>87</td><td><pre style="display:inline;">function TspQuery.GeraSQL: String;</pre></td></tr>
+<tr class="covered"><td>88</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="covered"><td>89</td><td><pre style="display:inline;">  SQL.Clear;</pre></td></tr>
+<tr class="covered"><td>90</td><td><pre style="display:inline;">  VerificarTabela;</pre></td></tr>
+<tr class="nocodegen"><td>91</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="covered"><td>92</td><td><pre style="display:inline;">  Result := '';</pre></td></tr>
+<tr class="covered"><td>93</td><td><pre style="display:inline;">  Result := 'select ' + ListaParaString(FspColunas, TTipoLista.tpColunas);</pre></td></tr>
+<tr class="covered"><td>94</td><td><pre style="display:inline;">  Result := Result + ' from ' + FspTabelas.Strings[0];</pre></td></tr>
+<tr class="covered"><td>95</td><td><pre style="display:inline;">  Result := Result + ' ' + ListaParaString(FspCondicoes, TTipoLista.tpCondicoes);</pre></td></tr>
+<tr class="nocodegen"><td>96</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="covered"><td>97</td><td><pre style="display:inline;">  SQL.Add(Result);</pre></td></tr>
+<tr class="covered"><td>98</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>99</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>100</td><td><pre style="display:inline;">function TspQuery.ListaParaString(aStringList: TStringList;</pre></td></tr>
+<tr class="nocodegen"><td>101</td><td><pre style="display:inline;">                                  aTipoLista:  TTipoLista): String;</pre></td></tr>
+<tr class="nocodegen"><td>102</td><td><pre style="display:inline;">var</pre></td></tr>
+<tr class="nocodegen"><td>103</td><td><pre style="display:inline;">  I: Integer;</pre></td></tr>
+<tr class="covered"><td>104</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="covered"><td>105</td><td><pre style="display:inline;">  Result := '';</pre></td></tr>
+<tr class="nocodegen"><td>106</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="covered"><td>107</td><td><pre style="display:inline;">  for I := 0 to Pred(aStringList.Count) do</pre></td></tr>
+<tr class="nocodegen"><td>108</td><td><pre style="display:inline;">  begin</pre></td></tr>
+<tr class="covered"><td>109</td><td><pre style="display:inline;">    case aTipoLista of</pre></td></tr>
+<tr class="nocodegen"><td>110</td><td><pre style="display:inline;">      tpColunas:</pre></td></tr>
+<tr class="nocodegen"><td>111</td><td><pre style="display:inline;">      begin</pre></td></tr>
+<tr class="covered"><td>112</td><td><pre style="display:inline;">         if Result &lt;&gt; '' then</pre></td></tr>
+<tr class="notcovered"><td>113</td><td><pre style="display:inline;">           Result := Result + ', ';</pre></td></tr>
+<tr class="nocodegen"><td>114</td><td><pre style="display:inline;">      end;</pre></td></tr>
+<tr class="nocodegen"><td>115</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>116</td><td><pre style="display:inline;">      tpCondicoes:</pre></td></tr>
+<tr class="nocodegen"><td>117</td><td><pre style="display:inline;">      begin</pre></td></tr>
+<tr class="covered"><td>118</td><td><pre style="display:inline;">        if Result = '' then</pre></td></tr>
+<tr class="nocodegen"><td>119</td><td><pre style="display:inline;">        begin</pre></td></tr>
+<tr class="covered"><td>120</td><td><pre style="display:inline;">          if Copy(Trim(aStringList.Strings[I]), 0, 3) = 'and' then</pre></td></tr>
+<tr class="notcovered"><td>121</td><td><pre style="display:inline;">            Result := Copy(Trim(aStringList.Strings[I]), 4, Length(Trim(aStringList.Strings[I])))</pre></td></tr>
+<tr class="covered"><td>122</td><td><pre style="display:inline;">          else if Copy(Trim(aStringList.Strings[I]), 0, 2) = 'or' then</pre></td></tr>
+<tr class="covered"><td>123</td><td><pre style="display:inline;">            Result := Copy(Trim(aStringList.Strings[I]), 3, Length(Trim(aStringList.Strings[I])))</pre></td></tr>
+<tr class="covered"><td>124</td><td><pre style="display:inline;">          else Result := ' ' + Trim(aStringList.Strings[I]);</pre></td></tr>
+<tr class="nocodegen"><td>125</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="covered"><td>126</td><td><pre style="display:inline;">          Continue;</pre></td></tr>
+<tr class="nocodegen"><td>127</td><td><pre style="display:inline;">        end</pre></td></tr>
+<tr class="covered"><td>128</td><td><pre style="display:inline;">        else if (Pos('AND ', Trim(UpperCase(Trim(aStringList.Strings[I])))) &lt;= 0) and</pre></td></tr>
+<tr class="nocodegen"><td>129</td><td><pre style="display:inline;">                (Pos('OR ', Trim(UpperCase(Trim(aStringList.Strings[I])))) &lt;= 0) then</pre></td></tr>
+<tr class="covered"><td>130</td><td><pre style="display:inline;">          Result := Result + ' and '</pre></td></tr>
+<tr class="nocodegen"><td>131</td><td><pre style="display:inline;">        else</pre></td></tr>
+<tr class="covered"><td>132</td><td><pre style="display:inline;">          Result := Result + ' ';</pre></td></tr>
+<tr class="nocodegen"><td>133</td><td><pre style="display:inline;">      end;</pre></td></tr>
+<tr class="nocodegen"><td>134</td><td><pre style="display:inline;">    end;</pre></td></tr>
+<tr class="nocodegen"><td>135</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="covered"><td>136</td><td><pre style="display:inline;">    Result := Result + Trim(aStringList.Strings[I]);</pre></td></tr>
+<tr class="covered"><td>137</td><td><pre style="display:inline;">  end;</pre></td></tr>
+<tr class="nocodegen"><td>138</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="covered"><td>139</td><td><pre style="display:inline;">  if (Result = '') and (aTipoLista = TTipoLista.tpColunas) then</pre></td></tr>
+<tr class="covered"><td>140</td><td><pre style="display:inline;">    Result := ' * '</pre></td></tr>
+<tr class="covered"><td>141</td><td><pre style="display:inline;">  else if (Result &lt;&gt; '') and (aTipoLista = TTipoLista.tpCondicoes) then</pre></td></tr>
+<tr class="covered"><td>142</td><td><pre style="display:inline;">    Result := 'where' + Result;</pre></td></tr>
+<tr class="covered"><td>143</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>144</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>145</td><td><pre style="display:inline;">{$REGION 'Get_Sets'}</pre></td></tr>
+<tr class="nocodegen"><td>146</td><td><pre style="display:inline;">function TspQuery.GetSpColunas: TStringList;</pre></td></tr>
+<tr class="covered"><td>147</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="covered"><td>148</td><td><pre style="display:inline;">  Result := FspColunas;</pre></td></tr>
+<tr class="covered"><td>149</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>150</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>151</td><td><pre style="display:inline;">function TspQuery.GetSpCondicoes: TStringList;</pre></td></tr>
+<tr class="covered"><td>152</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="covered"><td>153</td><td><pre style="display:inline;">  Result := FspCondicoes;</pre></td></tr>
+<tr class="covered"><td>154</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>155</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>156</td><td><pre style="display:inline;">function TspQuery.GetSpTabelas: TStringList;</pre></td></tr>
+<tr class="covered"><td>157</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="covered"><td>158</td><td><pre style="display:inline;">  Result := FspTabelas;</pre></td></tr>
+<tr class="covered"><td>159</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>160</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>161</td><td><pre style="display:inline;">procedure TspQuery.SetSPColunas(aValue: TStringList);</pre></td></tr>
+<tr class="notcovered"><td>162</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="notcovered"><td>163</td><td><pre style="display:inline;">  FspColunas := aValue;</pre></td></tr>
+<tr class="notcovered"><td>164</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>165</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>166</td><td><pre style="display:inline;">procedure TspQuery.SetSPCondicoes(aValue: TStringList);</pre></td></tr>
+<tr class="notcovered"><td>167</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="notcovered"><td>168</td><td><pre style="display:inline;">  FspCondicoes := aValue;</pre></td></tr>
+<tr class="notcovered"><td>169</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>170</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>171</td><td><pre style="display:inline;">procedure TspQuery.SetSPTabelas(aValue: TStringList);</pre></td></tr>
+<tr class="notcovered"><td>172</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="notcovered"><td>173</td><td><pre style="display:inline;">  FspTabelas := aValue;</pre></td></tr>
+<tr class="notcovered"><td>174</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>175</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>176</td><td><pre style="display:inline;">{$ENDREGION}</pre></td></tr>
+<tr class="nocodegen"><td>177</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>178</td><td><pre style="display:inline;">end.</pre></td></tr>
+</table>
+</body>
+</html>
