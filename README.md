@@ -1,7 +1,5 @@
 # Projeto Delphi
-Teste desenvolvido para qualificação a empresa SoftPlan
-
-Desenvolvido de acordo com as solicitações do "Teste SoftPlan" e extraindo o máximo em padrões de projeto.
+Aplicação demo em Delphi demonstrando habilidades com Orientação a Objetos, Threads, criação de componentes, Clean Code e boas práticas de programação
 
 Instalar primeiro o componente "spComponentes", para depois compilar o projeto ProvaDelphiApp.
 
